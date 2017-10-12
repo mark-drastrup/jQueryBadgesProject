@@ -3,7 +3,7 @@ $(function() {
   $.ajax({
     url: "https://www.codeschool.com/users/markdrastrup.json",
     dataType: "jsonp",
-    succes: function(response) {
+    success: function(response) {
         var badgeElements= $.map(response.courses.completed, function(item, index) {
             var badgeDiv = $('<div />', {class: "course"});
             $('<h3>'+item.title+'</h3>').appendTo(badgeDiv);
